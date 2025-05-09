@@ -170,8 +170,19 @@ exports.productAPIPage = (req, res) => {
 };
 
 exports.orderAPIPage = (req, res) => {
-    //I didn't apply ejs semplifications on purpose, so everybody can understand what all the "includes" mean
-    res.render("ordersApi", {});
+    //Setting active mainPages
+    mainPages.forEach(page => {
+        page.title == "Orders" ? page.active = true : page.active = false;
+    });
+    res.render("ordersApi", { 
+        //These parameters are standard and should be used in every page
+        motto: "OrdersApi",
+        linksNavbar: mainPages.slice(2), //I take every page but not the home page, required from header and footer
+        home: mainPages[0], 
+        current: mainPages[1],
+        currentYear: currentYear,
+        username: getUsername(req.cookies.jwtToken) ?? '',
+    });
 };
 
 //Authorization
