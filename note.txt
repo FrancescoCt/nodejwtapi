@@ -1,0 +1,44 @@
+//Note per lo sviluppatore, da inserire nel ReadMe
+
+//Avviare progetto npm per la prima volta nella cartella
+npm init -y         (creazione veloce del package.json)
+
+//Installare moduli e salvarli nel package
+npm install express --save
+npm install mysql --save
+npm install dotenv --save
+npm install ejs --save
+npm install jsonwebtoken --save
+npm install cookie-parser -- save
+
+npm install mocha chai supertest sinon --save-dev
+
+//Disinstallare un modulo ed eliminarlo dal package
+npm uninstall mysql
+
+//Installare tutte le dipendenze senza un node_modules dal package.json
+npm install
+
+//Come funziona
+- Avviare l'applicazione col comando: 
+node app.js
+
+- Sul terminale dovresti vedere il messaggio del server in esecuzione:
+Server running at http://localhost:9600/
+Connected to the MySQL database.
+
+- Una prova di funzionamento può essere svolta con il seguente url di esempio preso dalla route:
+http://localhost:9600/api/products
+
+- Per visionare invece la homePage scritta con ejs:
+http://localhost:9600/home
+
+//Tests
+- Avviare tutti i test
+npx mocha tests/
+- Avviare singolo test
+npx mocha tests/productTest.js
+
+//Video di riferimento per login e uso jwt
+https://www.youtube.com/watch?v=NikBvN7XDq4&t=1247s
+

@@ -1,0 +1,12 @@
+<div class="container mt-5 d-flex justify-content-around align-items-center">
+  <% itemsCards.forEach(item => { %>
+    <div class="card cardAdvanced mb-3" style="width: 18rem;">
+      <a href="<%= item.href %>" class="text-primary-custom">
+        <img src="<%= item.src %>" class="card-img-top">
+        <div class="cardAdvanced-overlay">
+          <%= item.title %>
+        </div>
+      </a>
+    </div>
+  <% }); %>
+</div>

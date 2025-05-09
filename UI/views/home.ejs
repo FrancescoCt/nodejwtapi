@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="it">
+    <%- include('../components/head', { current: current}) %>
+<body>
+    <%- include('../components/header', { home: home, current: current, linksNavbar: linksNavbar }) %>
+    <%- include('../components/title', { current: current, motto: motto, username: username }) %>
+    <%- include('../components/cards', { itemsCards: itemsCards }) %>
+    <%- include('../components/sections', { itemsSections: itemsSections }) %>
+    <%- include('../components/footer', { home: home, currentYear: currentYear }) %>
+</body>
+
+</html>

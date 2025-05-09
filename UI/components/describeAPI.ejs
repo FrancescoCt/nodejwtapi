@@ -1,0 +1,17 @@
+<!-- This component shows the functions implemented for every api given in itemsAPIPages defined in pageController -->
+<div class="container mt-5">
+    <% itemsAPIPages.forEach(item => { %>
+        <form class="justify-content-center m-5 border border-primary rounded p-3">
+            <div class="form-group mr-2">
+                <h3 class="mb-4 text-muted text-center"><%= item.title %></h3>
+                <span class="form-text text-muted text-center ">List of APIs:</span>
+                <span class="form-text text-muted"><strong>Create <%= item.title %></strong>: <br>  Write the name of the new <%= item.title %> to be saved in DB</span>
+                <span class="form-text text-muted"><strong>Get <%= item.title %>s</strong>: <br> Show all <%= item.title %> saved in db</span>
+                <span class="form-text text-muted"><strong>Get <%= item.title %> </strong>: <br> Modify the get of Get <%= item.title %> to obtain the single element json</span>
+                <span class="form-text text-muted"><strong>Update <%= item.title %></strong>: <br> Write id and new name of the existing <%= item.title %> to be savede in DB</span>
+                <span class="form-text text-muted"><strong>Delete <%= item.title %></strong>: <br> Write the id of the existing <%= item.title %> to be eliminated from DB</span>
+            </div>
+            <a href="<%= item.href %>" class="btn btn-primary btn-success " target="_blank">Go to APIs</a>
+        </form>
+    <% }); %>
+</div>
