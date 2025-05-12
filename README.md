@@ -43,7 +43,7 @@
   If it's the first time you are logging in, you should go to the sign up page and put your credentials and email there. <br>
   Then, go to login page and get the token (after you login successfully the token will be set in a cookie that will grant you access to the others pages and apis and you can use them normally). 
   <br>We are talking about the same apis of nodejstravelapi project (https://github.com/FrancescoCt/NodejsTravelApi), but this time with jwt token implementation and better use of ejs for the pages. <br>
-  For quick explanation of basic instruction have a look at note.txt file.
+  For quick explanation of basic instruction have a look at note.txt file, if you prefer visual info instead, checkout the schema.png file.
 
 </p>
 
